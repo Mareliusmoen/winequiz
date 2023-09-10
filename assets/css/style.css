@@ -1,5 +1,20 @@
+/*Main background, font and font color*/
 body {
     background-color: #D9DDDC;
     font-family: 'Spectral', serif;
     color: #222021;
 }
+/*Countdown timer bar*/
+.round-time-bar div {
+    height: 5px;
+    background: linear-gradient(to bottom, #222021, black);
+  }
+  .round-time-bar[data-style="smooth"] div {
+    animation: roundtime calc(var(--duration) * 1s) linear forwards;
+  }
+ @keyframes roundtime {
+    to {
+      /* More performant than animating `width` */
+      transform: scaleX(0);
+    }
+  }
