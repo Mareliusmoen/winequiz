@@ -3,18 +3,30 @@ body {
     background-color: #D9DDDC;
     font-family: 'Spectral', serif;
     color: #222021;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 /*Countdown timer bar*/
 .round-time-bar div {
     height: 5px;
     background: linear-gradient(to bottom, #222021, black);
-  }
-  .round-time-bar[data-style="smooth"] div {
+}
+
+.round-time-bar[data-style="smooth"] div {
     animation: roundtime calc(var(--duration) * 1s) linear forwards;
-  }
- @keyframes roundtime {
+}
+
+@keyframes roundtime {
     to {
-      /* More performant than animating `width` */
-      transform: scaleX(0);
+        /* More performant than animating `width` */
+        transform: scaleX(0);
     }
-  }
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
