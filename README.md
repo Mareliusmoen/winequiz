@@ -1,39 +1,63 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# WineQuiz
 
-Welcome,
+This a JavaScript winequiz designed to be just as fun by your self as it will be in a group, the quistions will be suited for a beginner level and are controlled by a award-winning Sommelier.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Demo
+add responsiveness picture here
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## User Stories
+This app is created for those that have a basic knowledge about wine, wine regions, production technique and would like to learn more while testing their skills.
+As a user of this quiz I would like to:
+As a user, I want to quickly understand what the quiz is all about and how to start to quiz itself.
+As a user, I want to be able to play the quiz on laptop/desktop (mouse), tablet (touchscreen) and mobile (touchscreen).
+As a user, I would like to know my score as I play the game.
+As a user, I would like to get the correct answered explained when I answer incorrectly to learn more about the subject.
+As a user, I would like to have a way to share the Quiz the quiz URL with friends & family through social media(Facebook,Instagram and email).
 
-## Codeanywhere Reminders
+## Strategy
+The strategy is to educate people about wine knowledge, bring more enthusiasm to the subject of wine and do it in a fun and creative way.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Wireframe
+The wireframe for this project was hand written as I enjoy the artist freedom and creativity the process gives me, then those handwritten designs were digitalised with the AI-powered Uizasrd App ( app.uizard.io ).
 
-`python3 -m http.server`
+### Welcome screen
+![Alt text](assets/images/winequiz-welcome.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Question screen
+![Alt text](assets/images/winequiz-question.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+### Correct answer
+![Alt text](assets/images/winequiz-correct.png)
 
-`http_server`
+### Wrong answer
+![Alt text](assets/images/winequiz-wrong.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Color scheme
+From light red to dark burgundy.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Technologies
+HTML - To create a basic site
+JavaScript - To create the Quiz itself
+CSS - To style the site and quiz to make it accessible and nice to look at
+Uizard - To create the wireframes
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Excisting features
+????
+## Features left to implement
+????
 
-To log into the Heroku toolbelt CLI:
+## Testing
+????
+## Validator testing
+?????
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Bugs
+????
+## Unsolved bugs
+????
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Deployment
+????
 
----
-
-Happy coding!
+## Credits
+?????
