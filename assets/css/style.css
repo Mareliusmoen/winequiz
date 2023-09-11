@@ -72,6 +72,10 @@ body {
 .correct {
     background-color: #81996750;
 }
+/*wrong answer styling*/
+.wrong {
+    background-color: #ff9b9b50;
+}
 /*Footer styling*/
 .footer {
     display: flex;
