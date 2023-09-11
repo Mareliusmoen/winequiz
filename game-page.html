@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,35 @@
     <script src="https://kit.fontawesome.com/bd589d914e.js" crossorigin="anonymous"></script>
     <!--Google font download link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <h1 class=heading>
         <img class="logo" src="assets/images/winequiz-logo.png" alt="logo" style="width: 25%;">
     </h1>
-    <div class="game-box">
-        <div class="round-time-bar" data-style="smooth" style="--duration: 25;">
-            <div></div>
+    <div id="main">
+        <div class="game-box">
+            <div class="round-time-bar" data-style="smooth" style="--duration: 25;">
+                <div></div>
+            </div>
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <div class="score"></div>
         </div>
-        <div class="question">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec non enim pellentesque, pulvinar est ac, scelerisque felis.</p>
-        </div>
-        <div class="options">
-            <ul class="options-list">
-                <li id="option-a">Option A</li>
-                <li id="option-b">Option B</li>
-                <li id="option-c">Option C</li>
-                <li id="option-d">Option D</li>
-            </ul>
-        </div>
-        <div class="score"></div>
     </div>
-
     <footer class="footer">
         <p class="social-media-links">Spread the love <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i></p>
-     </footer>
+            <i class="fa-brands fa-instagram"></i>
+        </p>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
