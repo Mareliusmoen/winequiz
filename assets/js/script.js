@@ -53,7 +53,7 @@ function selectAnswer(e) {
     const correct = selectedBotton.dataset.correct
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
-    setStatusClass(button button.dataset.correct)
+    setStatusClass(button, button.dataset.correct)
     })
     if (shuffledQuestions.length > currentQuestionIndex + 1){
     nextButton.classList.remove('hide')
@@ -72,7 +72,7 @@ function setStatusClass(element, correct) {
     }
 }
 
-Function clearStatusClass(element) {
+function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
@@ -86,7 +86,7 @@ const questions = [
             { text: 'Riesling', correct: false },
             { text: 'Vermentino', correct: false },
         ]
-    }
+    },
     {
         question: 'Which are the 3 main grape varieties in Champagne?',
         answers: [
