@@ -68,7 +68,10 @@ body {
 }
 
 /*The answer-options div/list styling*/
-
+/*Correct answer styling*/
+.correct {
+    background-color: #81996750;
+}
 /*Footer styling*/
 .footer {
     display: flex;
