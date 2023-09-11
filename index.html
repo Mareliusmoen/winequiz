@@ -8,10 +8,10 @@
     <title>WineQuiz</title>
     <!--FontAwesome icons/font-->
     <script src="https://kit.fontawesome.com/bd589d914e.js" crossorigin="anonymous"></script>
-     <!--Google font download link-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
+    <!--Google font download link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <img class="logo" src="assets/images/winequiz-logo.png" alt="logo" style="width: 25%;">
     </h1>
     <div class="main">
-        <div class="welcome-text">
+        <div id="welcome-txt" class="welcome-text">
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non enim pellentesque,
                 pulvinar est ac, scelerisque felis. Nunc imperdiet tellus ac tortor iaculis, et mollis metus
                 iaculis. Proin molestie lectus eu nisi dignissim faucibus. Mauris ante enim, imperdiet id
@@ -30,11 +30,13 @@
                 ger id condimentum lorem. Maecenas magna mi, egestas id tellus vel, tincidunt sollicitudin leo."</p>
         </div>
         <div class="start-game">
-           <button type="button" class="btn">Click her to start!</button>
+            <button type="button" id="start-button" class="btn">Click her to start!</button>
+            <!--Next question button -->
+            <button type="button" class="btn hide">Next Question</button>
         </div>
     </div>
     <div class="main">
-        <div class="game-box hide">
+        <div id="game-container" class="game-box hide">
             <div class="round-time-bar" data-style="smooth" style="--duration: 25;">
                 <div></div>
             </div>
