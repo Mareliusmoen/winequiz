@@ -48,7 +48,7 @@ body {
     outline: none;
 }
 .btn:hover {
-    border-color: #D9DDDC;
+    border-color: black;
 }
 /*Countdown timer bar*/
 .round-time-bar div {

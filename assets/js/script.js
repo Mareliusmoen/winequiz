@@ -1,12 +1,17 @@
 const startButton = document.getElementById('start-button')
+const nextButton = document.getElementById('next-button')
 const welcomeText = document.getElementById('welcome-txt')
 const questionContainerElement = document.getElementById('game-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-const shuffledQuestions, currentQuestionIndex
+
+let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
-
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
 function startGame() {
     console.log('started')
     startButton.classList.add('hide')
@@ -18,20 +23,77 @@ function startGame() {
 }
 
 function setNextQuestion() {
-showQuestion(shuffledQuestions[currentQuestionIndex])
+    resetState()
+    showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-function showQuestion(question)
-
-function selectAnswer() {
-
+function showQuestion(question) {
+    questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
+        if (answer.correct) {
+          button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
+    })
 }
+
+function resetState() {
+    nextButton.classList.add('hide')
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    }
+}
+
+function selectAnswer(e) {
+    const selectedBotton = e.target
+    const correct = selectedBotton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+    setStatusClass(button button.dataset.correct)
+    })
+    if (shuffledQuestions.length > currentQuestionIndex + 1){
+    nextButton.classList.remove('hide')
+}   else {
+    startButton.innerText = 'Go Again!'
+    startButton.classList.remove('hide')
+}
+}
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
+
+Function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
+
 const questions = [
     {
         question: 'What is the main grape variety in Prosecco wines?',
         answers: [
             { text: 'Glera', correct: true },
             { text: 'Chardonnay', correct: false },
+            { text: 'Riesling', correct: false },
+            { text: 'Vermentino', correct: false },
+        ]
+    }
+    {
+        question: 'Which are the 3 main grape varieties in Champagne?',
+        answers: [
+            { text: 'Riesling, Pinot Noir, Glara', correct: true },
+            { text: 'Chardonnay', correct: false },
+            { text: 'Riesling', correct: false },
+            { text: 'Vermentino', correct: false },
         ]
     }
 ]
