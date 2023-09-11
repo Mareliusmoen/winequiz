@@ -25,6 +25,18 @@ body {
     }
 }
 
+/*The answer-options div/list styling*/
+.options-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.options-list > li {
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
 .footer {
     display: flex;
     justify-content: flex-end;
