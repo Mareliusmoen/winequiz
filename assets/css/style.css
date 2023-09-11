@@ -1,6 +1,10 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+/*Hiding items before game start*/
+.hide {
+    display: none;
+}
 /*Main background, font and font color*/
 body {
     background-color: #D9DDDC;

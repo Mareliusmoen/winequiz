@@ -8,6 +8,10 @@
     <title>WineQuiz</title>
     <!--FontAwesome icons/font-->
     <script src="https://kit.fontawesome.com/bd589d914e.js" crossorigin="anonymous"></script>
+     <!--Google font download link-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +30,22 @@
                 ger id condimentum lorem. Maecenas magna mi, egestas id tellus vel, tincidunt sollicitudin leo."</p>
         </div>
         <div class="start-game">
-            <a href="game-page.html"><button type="button" class="btn">Click her to start!</button></a>
+           <button type="button" class="btn">Click her to start!</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="game-box hide">
+            <div class="round-time-bar" data-style="smooth" style="--duration: 25;">
+                <div></div>
+            </div>
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <div class="score"></div>
         </div>
     </div>
     <footer class="footer">
