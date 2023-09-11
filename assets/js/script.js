@@ -168,4 +168,67 @@ const questions = [
             { text: 'Sangiovese', correct: false },
         ]
     },
+    {
+        question: 'Which grape variety is the most widely planted vine variety in eastern USA?',
+        answers: [
+            { text: 'Chardonnay', correct: false },
+            { text: 'Cabernet Sauvignon', correct: false },
+            { text: 'Solaris', correct: false },
+            { text: 'Concord', correct: true },
+        ]
+    },
+    {
+        question: 'Which of these countries has the highest wine consumption per capita in the world?',
+        answers: [
+            { text: 'Luxembourg', correct: true },
+            { text: 'Switzerland', correct: false },
+            { text: 'France', correct: false },
+            { text: 'Italy', correct: false },
+        ]
+    },
+    {
+        question: 'What is the more popular name for the dark skinned Côt grape variety?',
+        answers: [
+            { text: 'Shiraz', correct: false },
+            { text: 'Cabernet Franc', correct: false },
+            { text: 'Malbec', correct: true },
+            { text: 'Aglianico', correct: false },
+        ]
+    },
+    {
+        question: 'Egg whites are sometimes used as a fining agent for young red wines and it is adsorbing the harsh and bitter tannins making the wine more pleasent to drink, approximately how many egg whites would you use for a 225 liter barrel of wine?',
+        answers: [
+            { text: '5', correct: true },
+            { text: '20', correct: false },
+            { text: '35', correct: false },
+            { text: '50', correct: false },
+        ]
+    },
+    {
+        question: 'What is the name of Ethiopias only winery?',
+        answers: [
+            { text: 'African Wine', correct: false },
+            { text: 'Golden Sands Vineyards', correct: false },
+            { text: 'Addis Ababa Winery', correct: false },
+            { text: 'Awash Wine', correct: true },
+        ]
+    },
+    {
+        question: 'What was the most famous and most highly prized wine of Italy in the Roman period?',
+        answers: [
+            { text: 'Amarone', correct: false },
+            { text: 'Falernum', correct: true },
+            { text: 'Vino Abruzzo', correct: false },
+            { text: 'Barolo', correct: false },
+        ]
+    },
+    {
+        question: 'What is the main grape variety in the fresh wite wines from Soave, Italy?',
+        answers: [
+            { text: 'Pinot Grigio', correct: false },
+            { text: 'Chardonnay', correct: false },
+            { text: 'Garganega', correct: true },
+            { text: 'Pecorino', correct: false },
+        ]
+    },
 ]
