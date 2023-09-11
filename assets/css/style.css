@@ -68,6 +68,10 @@ body {
 }
 
 /*The answer-options div/list styling*/
+/* Selected answer styling*/
+.selected {
+    border:2px solid #222021;
+}
 /*Correct answer styling*/
 .correct {
     background-color: #81996750;
