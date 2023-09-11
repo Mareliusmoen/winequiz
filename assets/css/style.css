@@ -12,11 +12,39 @@ body {
     flex-direction: column;
 }
 /*Flexbox styling*/
-#main {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+}
+/*Welcome page styling*/
+.welcome-text {
+    width: 800px;
+    max-width: 80vw;
+}
+/*Question and answer box styling*/
+.game-box {
+    width: 850px;
+    max-width: 80%;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 25px 0;
+}
+.btn {
+    color: #222021;
+    background-color: #D9DDDC;
+    border: 1px solid #222021;
+    border-radius: 5px;
+    padding: 7px 15px;
+    outline: none;
+}
+.btn:hover {
+    border-color: #D9DDDC;
 }
 /*Countdown timer bar*/
 .round-time-bar div {
@@ -42,4 +70,5 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: auto;
+    margin-right: 5vw;
 }
