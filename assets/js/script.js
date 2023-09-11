@@ -159,4 +159,13 @@ const questions = [
             { text: 'Piedmont', correct: false },
         ]
     },
+    {
+        question: 'Which famous Italian grape variety is known as "Chiavennasca" in the Valtellina region?',
+        answers: [
+            { text: 'Nebbiolo', correct: true },
+            { text: 'Barbera', correct: false },
+            { text: 'Amarone', correct: false },
+            { text: 'Sangiovese', correct: false },
+        ]
+    },
 ]
