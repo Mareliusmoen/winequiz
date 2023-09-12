@@ -29,6 +29,8 @@ function startGame() {
     scoreBoard.innerHTML = score
     startButton.classList.add('hide')
     welcomeText.classList.add('hide')
+    /* Randomization of all questions,
+   explained and credited from: https://forum.freecodecamp.org/t/how-does-math-random-work-to-sort-an-array/151540 */
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
@@ -79,7 +81,7 @@ function selectAnswer(e) {
         score++
         scoreBoard.innerHTML = score
     }
-     // Set status class for all buttons
+    // Set status class for all buttons
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
@@ -261,7 +263,7 @@ const questions = [
             { text: 'Garganega', correct: true },
             { text: 'Pecorino', correct: false },
         ]
-    },{
+    }, {
         question: 'When did we first use glass vessels with wine or other beverages?',
         answers: [
             { text: 'ca 3000 BC', correct: false },

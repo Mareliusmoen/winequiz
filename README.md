@@ -66,8 +66,9 @@ The app has:
 
 ## Credits
 - Logo created at www.looka.com .
-Main layout inspired by: 
-- https://www.codingninjas.com/studio/library/how-to-create-a-quiz-app-using-javascript
-- https://www.sitepoint.com/simple-javascript-quiz/
-- https://www.youtube.com/watch?v=_Im_xc_jMnk
-- https://www.youtube.com/watch?v=riDzcEQbX6k
+- Main layout inspired by: 
+    - https://www.codingninjas.com/studio/library/how-to-create-a-quiz-app-using-javascript
+    - https://www.sitepoint.com/simple-javascript-quiz/
+    - https://www.youtube.com/watch?v=_Im_xc_jMnk
+    - https://www.youtube.com/watch?v=riDzcEQbX6k
+- Question-randomization explained and credited from: https://forum.freecodecamp.org/t/how-does-math-random-work-to-sort-an-array/151540
