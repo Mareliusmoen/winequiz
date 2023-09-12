@@ -65,6 +65,17 @@ body {
 .wrong {
     background-color: #ff9b9b50;
 }
+/*Scoreboard styling*/
+.score-board {
+    display: flex;
+    flex-direction: row;
+}
+#score {
+    display: flex;
+}
+#total-answered {
+    display: flex;
+}
 /*Footer styling*/
 .footer {
     display: flex;

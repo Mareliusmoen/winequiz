@@ -67,6 +67,7 @@ The app has:
 ## Credits
 - Logo created at www.looka.com .
 - Main layout inspired by: 
+    - https://stackoverflow.com/questions/52196711/generate-a-score-based-on-correct-answers
     - https://www.codingninjas.com/studio/library/how-to-create-a-quiz-app-using-javascript
     - https://www.sitepoint.com/simple-javascript-quiz/
     - https://www.youtube.com/watch?v=_Im_xc_jMnk

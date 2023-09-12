@@ -7,9 +7,12 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
 // Scoreboard variable
-const scoreBoard = document.getElementById('score');
+const numberAnswered = document.getElementById('total-answered')
+const scoreBoard = document.getElementById('score')
+let totalAnswered = 0
 let score = 0
 scoreBoard.innerHTML = score
+numberAnswered.innerHTML = totalAnswered
 
 //variable to check if question is answered
 let questionAnswered = false
@@ -90,6 +93,10 @@ function selectAnswer(e) {
     })
     //if an answer is selected
     questionAnswered = true
+    if (questionAnswered) {
+        totalAnswered++
+        numberAnswered.innerHTML = totalAnswered
+    }
     /*When a option is chosen it checks if there are questions left to show in the array
     if not it will show a restart button that resets the game*/
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
