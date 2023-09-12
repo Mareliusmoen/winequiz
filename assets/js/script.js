@@ -6,9 +6,11 @@ const questionContainerElement = document.getElementById('game-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+//scoreboard variable
 var scoreBoard = document.getElementById('score')
-let shuffledQuestions, currentQuestionIndex
 scoreBoard.innerHTML = 0
+
+let shuffledQuestions, currentQuestionIndex
 
 //When you press the "Start" or "Next" buttons
 startButton.addEventListener('click', startGame)
@@ -85,7 +87,7 @@ function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
-// All the questions
+
 const questions = [
     {
         question: 'What is the main grape variety in Prosecco wines?',
