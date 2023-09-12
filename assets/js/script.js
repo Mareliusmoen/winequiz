@@ -261,5 +261,74 @@ const questions = [
             { text: 'Garganega', correct: true },
             { text: 'Pecorino', correct: false },
         ]
+    },{
+        question: 'When did we first use glass vessels with wine or other beverages?',
+        answers: [
+            { text: 'ca 3000 BC', correct: false },
+            { text: 'ca 1500 BC', correct: true },
+            { text: 'ca 500 AD', correct: false },
+            { text: 'ca 1500 AD', correct: false },
+        ]
+    },
+    {
+        question: 'What are the "teinturier" grape varieties known for?',
+        answers: [
+            { text: 'Their extra delicious flavour', correct: false },
+            { text: 'Their high acidity for a fhresher wine', correct: false },
+            { text: 'Their early ripeness for sweet wines', correct: false },
+            { text: 'Their red flesh for darker wines', correct: true },
+        ]
+    },
+    {
+        question: 'Grauburgunder is the German synonym for which grape variety?',
+        answers: [
+            { text: 'Pinot Gris', correct: true },
+            { text: 'Pinot Noir', correct: false },
+            { text: 'Pinot Blanc', correct: false },
+            { text: 'Pinot Meunier', correct: false },
+        ]
+    },
+    {
+        question: 'How much wine does a magnum bottle contain?',
+        answers: [
+            { text: '1 liter', correct: false },
+            { text: '1.5 liter', correct: true },
+            { text: '2 liter', correct: false },
+            { text: '2.5 liter', correct: false },
+        ]
+    },
+    {
+        question: 'Is the grape Listán on the Canary Islands the same as Palomino in Jerez? ',
+        answers: [
+            { text: 'Yes', correct: true },
+            { text: 'No', correct: false },
+        ]
+    },
+    {
+        question: 'How many Grand Cru vineyards are there in Chablis?',
+        answers: [
+            { text: '11', correct: false },
+            { text: '9', correct: false },
+            { text: '7', correct: true },
+            { text: '5', correct: false },
+        ]
+    },
+    {
+        question: "Which is the world famous sweet wine area in Hungary?",
+        answers: [
+            { text: 'Tokaji', correct: true },
+            { text: 'Sauternes', correct: false },
+            { text: 'Sopron', correct: false },
+            { text: 'Somló', correct: false },
+        ]
+    },
+    {
+        question: 'What is Hondarrabi?',
+        answers: [
+            { text: 'A Czech wine region', correct: false },
+            { text: 'A family of spanish basque vine varieties', correct: true },
+            { text: 'A production method used in Georgia', correct: false },
+            { text: 'A wine producer in Lebanon ', correct: false },
+        ]
     },
 ]
