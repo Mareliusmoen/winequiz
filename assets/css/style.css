@@ -59,11 +59,11 @@ body {
 }
 /*Correct answer styling*/
 .correct {
-    background-color: rgb(129, 153, 103);
+    background-color: #81996750;
 }
 /*wrong answer styling*/
 .wrong {
-    background-color: #ff9b9b;
+    background-color: #ff9b9b50;
 }
 /*Footer styling*/
 .footer {
