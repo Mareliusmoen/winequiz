@@ -86,6 +86,11 @@ function selectAnswer(e) {
     if (correct) {
         score++
         scoreBoard.innerHTML = score
+        let correctSound = new Audio('assets/audio/correct-answer.mp3')
+        correctSound.play()
+    } else {
+        let wrongSound = new Audio('assets/audio/wrong-answer.mp3')
+        wrongSound.play()
     }
     // Set status class for all buttons
     Array.from(answerButtonsElement.children).forEach(button => {
