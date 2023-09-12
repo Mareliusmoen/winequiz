@@ -81,6 +81,8 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: auto;
+    position: relative;
+    bottom: 0px;
     margin-right: 5vw;
 }
 /* make all links stay their font color even when visitet, and remove underscore */
