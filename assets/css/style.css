@@ -1,7 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-/*Hiding items before game start*/
 .hide {
     display: none;
 }
@@ -12,6 +11,9 @@ body {
     color: #222021;
     display: flex;
     flex-direction: column;
+}
+.logo {
+    height: 27vh;
 }
 /*Flexbox styling*/
 .main {
