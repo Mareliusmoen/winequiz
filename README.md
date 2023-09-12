@@ -19,6 +19,7 @@ The strategy is to educate people about wine knowledge, bring more enthusiasm to
 
 ## Wireframe
 The wireframe for this project was hand written as I enjoy the artist freedom and creativity the process gives me, then those handwritten designs were digitalised with the AI-powered Uizasrd App ( app.uizard.io ).
+Because of feedback from test users I have excluded the extra correct/wrong answer pages, to enhance the swiftness of the app and to boost the productivity of the learning experience of the user I have incorporated this in coloring the different option after the user have selected their answer. In addition to the color change I've added sound effects. The timer/countdown was removed to allow for the app be more educational rather than a test to assert your current knowledge, so now the user can read the question and all the answer at their own pace and contemplate about the facts presented by each individual question.
 
 ### Welcome screen
 ![Alt text](assets/images/winequiz-welcome.png)
@@ -79,3 +80,8 @@ The app has:
 - Answer buttons function inside the showQuestion function is credited to both:
 https://stackoverflow.com/questions/72873577/creating-a-javascript-quiz-web-app-why-wont-the-answer-options-show-under-each &
 https://www.youtube.com/watch?v=riDzcEQbX6k
+- Adding sound files to the correct answer button and wrong answer button:
+https://noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984
+
+### Media
+-Sound files for correct and wrong answer, David Calikes
