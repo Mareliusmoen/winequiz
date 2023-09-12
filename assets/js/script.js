@@ -11,6 +11,9 @@ const scoreBoard = document.getElementById('score');
 let score = 0
 scoreBoard.innerHTML = score
 
+//variable to check if question is answered
+let questionAnswered = false
+
 let shuffledQuestions, currentQuestionIndex
 
 //When you press the "Start" or "Next" buttons
@@ -35,7 +38,7 @@ function startGame() {
 //Function to call the right function to reset all elements and show the next question & options
 function setNextQuestion() {
     resetState()
-      const currentQuestion = shuffledQuestions[currentQuestionIndex];
+    const currentQuestion = shuffledQuestions[currentQuestionIndex];
     showQuestion(currentQuestion)
 }
 
@@ -60,20 +63,27 @@ function resetState() {
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
+    questionAnswered = false
 }
 //Selecting a button by clicking it, checking if its the correct answer
 function selectAnswer(e) {
+    //if the player has already answered
+    if (questionAnswered) {
+        return;
+    }
     const selectedButton = e.target
     selectedButton.classList.add('selected')
     const correct = selectedButton.dataset.correct
-     // Check if the answer is correct and update the score
-     if (correct) {
+    // Check if the answer is correct and update the score
+    if (correct) {
         score++
         scoreBoard.innerHTML = score
     }
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+    //if an answer is selected
+    questionAnswered = true
     /*When a option is chosen it checks if there are questions left to show in the array
     if not it will show a restart button that resets the game*/
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
