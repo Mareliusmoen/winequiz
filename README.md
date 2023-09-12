@@ -72,3 +72,6 @@ The app has:
     - https://www.youtube.com/watch?v=_Im_xc_jMnk
     - https://www.youtube.com/watch?v=riDzcEQbX6k
 - Question-randomization explained and credited from: https://forum.freecodecamp.org/t/how-does-math-random-work-to-sort-an-array/151540
+- Answer buttons function inside the showQuestion function is credited to both:
+https://stackoverflow.com/questions/72873577/creating-a-javascript-quiz-web-app-why-wont-the-answer-options-show-under-each &
+https://www.youtube.com/watch?v=riDzcEQbX6k

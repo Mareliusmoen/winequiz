@@ -40,6 +40,7 @@ function startGame() {
 //Function to call the right function to reset all elements and show the next question & options
 function setNextQuestion() {
     resetState()
+    //Picking a question out of the randomized array
     const currentQuestion = shuffledQuestions[currentQuestionIndex];
     showQuestion(currentQuestion)
 }
@@ -48,6 +49,8 @@ function setNextQuestion() {
 with the right text-content and the "correct" dataset to let you know if the answer is correct*/
 function showQuestion(question) {
     questionElement.innerText = question.question
+    /*This function below is credited both to https://www.youtube.com/watch?v=riDzcEQbX6k
+    & https://stackoverflow.com/questions/72873577/creating-a-javascript-quiz-web-app-why-wont-the-answer-options-show-under-each */
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
