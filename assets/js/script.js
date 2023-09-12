@@ -6,9 +6,10 @@ const questionContainerElement = document.getElementById('game-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
-//scoreboard variable
-var scoreBoard = document.getElementById('score')
-scoreBoard.innerHTML = 0
+// Scoreboard variable
+const scoreBoard = document.getElementById('score');
+let score = 0
+scoreBoard.innerHTML = score
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -21,6 +22,8 @@ nextButton.addEventListener('click', () => {
 //Function to hide the welcome page and start the quiz itself
 function startGame() {
     console.log('started')
+    score = 0
+    scoreBoard.innerHTML = score
     startButton.classList.add('hide')
     welcomeText.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -32,7 +35,8 @@ function startGame() {
 //Function to call the right function to reset all elements and show the next question & options
 function setNextQuestion() {
     resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+      const currentQuestion = shuffledQuestions[currentQuestionIndex];
+    showQuestion(currentQuestion)
 }
 
 /*Bringing a question from the array and setting its text and creating the option buttons
@@ -62,6 +66,11 @@ function selectAnswer(e) {
     const selectedButton = e.target
     selectedButton.classList.add('selected')
     const correct = selectedButton.dataset.correct
+     // Check if the answer is correct and update the score
+     if (correct) {
+        score++
+        scoreBoard.innerHTML = score
+    }
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
