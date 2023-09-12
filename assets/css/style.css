@@ -81,7 +81,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: auto;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     margin-right: 5vw;
 }
