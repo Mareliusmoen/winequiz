@@ -79,6 +79,7 @@ function selectAnswer(e) {
         score++
         scoreBoard.innerHTML = score
     }
+     // Set status class for all buttons
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })

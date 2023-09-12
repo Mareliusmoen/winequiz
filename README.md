@@ -15,7 +15,7 @@ As a user of this quiz I would like to:
 - As a user, I would like to have a way to share the Quiz the quiz URL with friends & family through social media(Facebook,Instagram and email).
 
 ## Strategy
-The strategy is to educate people about wine knowledge, bring more enthusiasm to the subject of wine and do it in a fun and creative way.
+The strategy is to educate people about wine knowledge, bring more enthusiasm to the subject of wine and do it in a fun and creative way. This will also be a great training tool for employees in the hospitality industry as well as those doing their Sommelier certifications.
 
 ## Wireframe
 The wireframe for this project was hand written as I enjoy the artist freedom and creativity the process gives me, then those handwritten designs were digitalised with the AI-powered Uizasrd App ( app.uizard.io ).
@@ -42,7 +42,12 @@ Pearl river #D9DDDC for background & charcoal #222021 for text & borders.
 - Uizard - To create the wireframes
 
 ## Excisting features
-????
+The features of the page where slightly changes from the original wireframe because of the strategy and goal of this app, to educate in a fun and creative way, and then the correct answer screens would be a distraction and make the user experience more tidious and less smooth.
+
+The app has:
+- A welcome text that is descriptive, fun/easy-going and entices the user to click the start-button.
+- It has a start-button that hides the welcometext and brings out the first question with 2-4 answer options.
+- When an answer is selected by touch or click the selected answer gets a extra thick border and the correct answer turns green and all the incorrect answers turns red. If you chose correctly the score-counter increases by 1, and as soon as you have selected your option a next question button will appear. (If there are no more questions available in the index a endgame/ restart button will show up)
 ## Features left to implement
 ????
 
@@ -61,5 +66,8 @@ Pearl river #D9DDDC for background & charcoal #222021 for text & borders.
 
 ## Credits
 - Logo created at www.looka.com .
-- countdown timer bar from: https://css-tricks.com/timer-bars-in-css-with-custom-properties/ 
-- Main layout inspired by: https://www.youtube.com/watch?v=riDzcEQbX6k 
+Main layout inspired by: 
+- https://www.codingninjas.com/studio/library/how-to-create-a-quiz-app-using-javascript
+- https://www.sitepoint.com/simple-javascript-quiz/
+- https://www.youtube.com/watch?v=_Im_xc_jMnk
+- https://www.youtube.com/watch?v=riDzcEQbX6k
