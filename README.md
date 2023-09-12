@@ -1,6 +1,6 @@
 # WineQuiz
 
-This a JavaScript winequiz designed to be just as fun by your self as it will be in a group, the quistions will be suited for a beginner level and are controlled by a award-winning Sommelier.
+This a JavaScript winequiz designed to be just as fun by your self as it will be in a group, the quistions will be suited for professionals and beginners alike. The app is designed to help hospitality workers expand their wine knowledge in an easy and interactive way, all questions are controlled by a award-winning Sommelier and based on best wine literature available.
 
 ## Demo
 add responsiveness picture here
@@ -12,7 +12,8 @@ As a user of this quiz I would like to:
 - As a user, I want to be able to play the quiz on laptop/desktop (mouse), tablet (touchscreen) and mobile (touchscreen).
 - As a user, I would like to know my score as I play the game.
 - As a user, I would like to get the correct answered explained when I answer incorrectly to learn more about the subject.
-- As a user, I would like to have a way to share the Quiz the quiz URL with friends & family through social media(Facebook,Instagram and email).
+- As a user, I would like to have a way to share the Quiz the quiz URL with friends & family through social media(Facebook and Linkedin).
+- As a user I can keep on playing and learning without the quiz ending.
 
 ## Strategy
 The strategy is to educate people about wine knowledge, bring more enthusiasm to the subject of wine and do it in a fun and creative way. This will also be a great training tool for employees in the hospitality industry as well as those doing their Sommelier certifications.
