@@ -1,3 +1,4 @@
+//Connecting the HTML element to a variable
 const startButton = document.getElementById('start-button')
 const nextButton = document.getElementById('next-button')
 const welcomeText = document.getElementById('welcome-txt')
@@ -9,12 +10,13 @@ var scoreBoard = document.getElementById('score')
 let shuffledQuestions, currentQuestionIndex
 scoreBoard.innerHTML = 0
 
+//When you press the "Start" or "Next" buttons
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
-
+//Function to hide the welcome page and start the quiz itself
 function startGame() {
     console.log('started')
     startButton.classList.add('hide')
@@ -25,11 +27,14 @@ function startGame() {
     setNextQuestion()
 }
 
+//Function to call the right function to reset all elements and show the next question & options
 function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
+/*Bringing a question from the array and setting its text and creating the option buttons
+with the right text-content and the "correct" dataset to let you know if the answer is correct*/
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
@@ -43,14 +48,14 @@ function showQuestion(question) {
         answerButtonsElement.appendChild(button)
     })
 }
-
+//Removing all option buttons and hiding the next button for the next round of the quiz
 function resetState() {
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
-
+//Selecting a button by clicking it, checking if its the correct answer
 function selectAnswer(e) {
     const selectedButton = e.target
     selectedButton.classList.add('selected')
@@ -58,6 +63,8 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+    /*When a option is chosen it checks if there are questions left to show in the array
+    if not it will show a restart button that resets the game*/
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
@@ -65,7 +72,7 @@ function selectAnswer(e) {
         startButton.classList.remove('hide')
     }
 }
-
+//setting the statusclass for all answers to the pre-determined class (wrong/correct)
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {

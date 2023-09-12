@@ -19,6 +19,7 @@
         <img class="logo" src="assets/images/winequiz-logo.png" alt="logo" style="width: 25%;">
     </h1>
     <div class="main">
+        <!-- Welcome text to describe the quiz and what to expect-->
         <div id="welcome-txt" class="welcome-text">
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non enim pellentesque,
                 pulvinar est ac, scelerisque felis. Nunc imperdiet tellus ac tortor iaculis, et mollis metus
@@ -32,25 +33,32 @@
         
     </div>
     <div class="main">
+        <!-- All of the elements for the quiz itself-->
         <div id="game-container" class="game-box hide">
+            <!--Timer bar, countdown 25 sec-->
             <div class="round-time-bar" data-style="smooth" style="--duration: 25;">
                 <div></div>
             </div>
+            <!--Questions from the JS file is shown in this div-->
             <div id="question">Question</div>
+            <!--Answers and their text from the JS file is shown in this grid-->
             <div id="answer-buttons" class="btn-grid">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
+            <!--Scoreboard to show the score so far in the quiz-->
             <div id="score">0</div>
         </div>
+        <!--Start the game button, also acts as a restart button when all questions are answered-->
         <div class="start-game">
             <button type="button" id="start-button" class="btn">Click her to start!</button>
             <!--Next question button -->
             <button type="button" id="next-button" class="btn hide">Next Question</button>
         </div>
     </div>
+    <!--Links to share the quiz on your own social media-->
     <footer class="footer">
         <p class="social-media-links">Spread the love <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
