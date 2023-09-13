@@ -9,17 +9,25 @@ body {
     display: flex;
     flex-direction: column;
 }
+.heading {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
 .logo {
     height: 27vh;
+    display: flex;
 }
 .audio-control {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
 }
 #mute-button {
-    font-size: larger;
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,9 +36,8 @@ body {
     border: solid 1px #222021;
 }
 #unmute-button {
-    font-size: larger;
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width:25px;
     display: flex;
     justify-content: center;
     align-items: center;
