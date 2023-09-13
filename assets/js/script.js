@@ -7,6 +7,8 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 let correctSound = new Audio('assets/audio/correct-answer.mp3')
 let wrongSound = new Audio('assets/audio/wrong-answer.mp3')
+const muteButton = document.getElementById('mute-button')
+const unMuteButton = document.getElementById('unmute-button')
 
 // Scoreboard variable
 const numberAnswered = document.getElementById('total-answered')
@@ -20,6 +22,30 @@ numberAnswered.innerHTML = totalAnswered
 let questionAnswered = false
 
 let shuffledQuestions, currentQuestionIndex
+
+//When you press the 'Mute' or 'Unmute' button
+muteButton.addEventListener('click', muteSound)
+function muteColor(color) {
+    muteButton.style.background = color;
+}
+unMuteButton.addEventListener('click', unMuteSound)
+function unMuteColor(color) {
+    unMuteButton.style.background = color;
+}
+
+//Mute / Unmute button function
+function muteSound() {
+    unMuteColor('#D9DDDC')
+    muteColor('#ff9b9b50')
+    wrongSound.muted()
+    correctSound.muted()
+}
+function unMuteSound() {
+    muteColor('#D9DDDC')
+    unMuteColor('#81996750')
+    wrongSound.removeAttribute('muted')
+    correctSound.removeAttribute('muted')
+}
 
 //When you press the "Start" or "Next" buttons
 startButton.addEventListener('click', startGame)

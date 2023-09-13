@@ -12,6 +12,32 @@ body {
 .logo {
     height: 27vh;
 }
+.audio-control {
+    display: flex;
+    flex-direction: row;
+}
+#mute-button {
+    font-size: larger;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9DDDC;
+    border-radius: 50%;
+    border: solid 1px #222021;
+}
+#unmute-button {
+    font-size: larger;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9DDDC;
+    border-radius: 50%;
+    border: solid 1px #222021;
+}
 /*Flexbox styling*/
 .main {
     display: flex;
