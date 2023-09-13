@@ -3,8 +3,8 @@
 This a JavaScript winequiz designed to be just as fun by your self as it will be in a group, the quistions will be suited for professionals and beginners alike. The app is designed to help hospitality workers expand their wine knowledge in an easy and interactive way, all questions are controlled by a award-winning Sommelier and based on best wine literature available.
 
 ## Demo
-add responsiveness picture here
-
+![Shows the page on laptop, desktop, tablet and mobile screen](assets/images/winequiz-responsive.png)
+Link to the live site: https://mareliusmoen.github.io/winequiz/
 ## User Stories
 This app is created for those that have a basic knowledge about wine, wine regions, production technique and would like to learn more while testing their skills.
 As a user of this quiz I would like to:
@@ -20,19 +20,19 @@ The strategy is to educate people about wine knowledge, bring more enthusiasm to
 
 ## Wireframe
 The wireframe for this project was hand written as I enjoy the artist freedom and creativity the process gives me, then those handwritten designs were digitalised with the AI-powered Uizasrd App ( app.uizard.io ).
-Because of feedback from test users I have excluded the extra correct/wrong answer pages, to enhance the swiftness of the app and to boost the productivity of the learning experience of the user I have incorporated this in coloring the different option after the user have selected their answer. In addition to the color change I've added sound effects. The timer/countdown was removed to allow for the app be more educational rather than a test to assert your current knowledge, so now the user can read the question and all the answer at their own pace and contemplate about the facts presented by each individual question.
+Because of feedback from test users and extensive testing by myselv, I have excluded the extra correct/wrong answer pages, to enhance the swiftness of the app and to boost the productivity of the learning experience of the user I have incorporated this in coloring the different option after the user have selected their answer. In addition to the color change I've added sound effects. The timer/countdown was removed to allow for the app be more educational rather than a test to assert your current knowledge, so now the user can read the question and all the answer at their own pace and contemplate about the facts presented by each individual question.
 
 ### Welcome screen
-![Alt text](assets/images/winequiz-welcome.png)
+![wireframe of the welcome screen](assets/images/winequiz-welcome.png)
 
 ### Question screen
-![Alt text](assets/images/winequiz-question.png)
+![wireframe of the questions and answer screen](assets/images/winequiz-question.png)
 
 ### Correct answer
-![Alt text](assets/images/winequiz-correct.png)
+![wireframe of the correct answer answer screen](assets/images/winequiz-correct.png)
 
 ### Wrong answer
-![Alt text](assets/images/winequiz-wrong.png)
+![wireframe of the wrong answer screen](assets/images/winequiz-wrong.png)
 
 ### Color scheme
 Pearl river #D9DDDC for background & charcoal #222021 for text & borders.
