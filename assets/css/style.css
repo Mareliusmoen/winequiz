@@ -100,8 +100,20 @@ body {
     display: flex;
     flex-direction: row;
 }
+#score {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#total-answered {
+    padding-left: 4px;
+    padding-right: 4px;
+}
 #total-score {
     display: flex;
+    color: #D9DDDC;
+    background-color: #222021;
+    border-radius: 15px;
+    padding: 10px;
 }
 #score {
     display: flex;
