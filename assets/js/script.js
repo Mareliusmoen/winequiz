@@ -37,8 +37,8 @@ function unMuteColor(color) {
 function muteSound() {
     unMuteColor('#D9DDDC')
     muteColor('#ff9b9b50')
-    wrongSound.muted()
-    correctSound.muted()
+    wrongSound.setAttribute.muted()
+    correctSound.setAttribute.muted()
 }
 function unMuteSound() {
     muteColor('#D9DDDC')
