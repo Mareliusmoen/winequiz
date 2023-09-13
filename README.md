@@ -36,6 +36,7 @@ Because of feedback from test users I have excluded the extra correct/wrong answ
 
 ### Color scheme
 Pearl river #D9DDDC for background & charcoal #222021 for text & borders.
+For the correct- and wrong answer buttons aswell as unmute- and mute-butten the colors #81996750 & #ff9b9b50 are used.
 
 ## Technologies
 - HTML - To create a basic site
@@ -64,7 +65,7 @@ The app has:
 ????
 
 ## Deployment
-????
+This site was deployed to GitHub Pages and this is the method I used: From the GitHub repository go to the settings, in the source-section dropdown menu select master branch. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 ## Credits
 - Logo created at www.looka.com .
@@ -81,9 +82,12 @@ The app has:
 - Answer buttons function inside the showQuestion function is credited to both:
 https://stackoverflow.com/questions/72873577/creating-a-javascript-quiz-web-app-why-wont-the-answer-options-show-under-each &
 https://www.youtube.com/watch?v=riDzcEQbX6k
+- Adding color to buttons when pressed and with correct/wrong answer: https://www.geeksforgeeks.org/how-to-change-the-background-color-after-clicking-the-button-in-javascript/
 - Adding sound files to the correct answer button and wrong answer button:
 https://noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984
 - How to add toggle boolean to mute buttons: https://www.tutorialspoint.com/how-to-toggle-a-boolean-using-javascript
-
+- Some initial bugs where sorted with the assistance of this page: https://stackoverflow.com/questions/72873577/creating-a-javascript-quiz-web-app-why-wont-the-answer-options-show-under-each
 ### Media
--Sound files for correct and wrong answer, David Calikes
+- Sound files for correct and wrong answer, David Calikes
+- All icons from https://fontawesome.com/
+
