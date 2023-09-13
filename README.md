@@ -83,6 +83,7 @@ https://stackoverflow.com/questions/72873577/creating-a-javascript-quiz-web-app-
 https://www.youtube.com/watch?v=riDzcEQbX6k
 - Adding sound files to the correct answer button and wrong answer button:
 https://noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984
+- How to add toggle boolean to mute buttons: https://www.tutorialspoint.com/how-to-toggle-a-boolean-using-javascript
 
 ### Media
 -Sound files for correct and wrong answer, David Calikes

@@ -32,19 +32,26 @@ unMuteButton.addEventListener('click', unMuteSound)
 function unMuteColor(color) {
     unMuteButton.style.background = color;
 }
-
-//Mute / Unmute button function
+var muteFlag = true
+function toggleMuteBoolean() {
+    console.log(muteFlag)
+    muteFlag = muteFlag ? false : true
+    console.log(muteFlag)
+}
+//Mute / Unmute button color change
 function muteSound() {
     unMuteColor('#D9DDDC')
     muteColor('#ff9b9b50')
-    wrongSound.setAttribute.muted()
-    correctSound.setAttribute.muted()
+    if (muteFlag = false) {
+        toggleMuteBoolean()
+    }
 }
 function unMuteSound() {
     muteColor('#D9DDDC')
     unMuteColor('#81996750')
-    wrongSound.removeAttribute('muted')
-    correctSound.removeAttribute('muted')
+    if (muteFlag = true) {
+        toggleMuteBoolean()
+    }
 }
 
 //When you press the "Start" or "Next" buttons
@@ -114,9 +121,11 @@ function selectAnswer(e) {
     if (correct) {
         score++
         scoreBoard.innerHTML = score
-        correctSound.play()
+        if (muteFlag == false){
+        correctSound.play()}
     } else {
-        wrongSound.play()
+        if (muteFlag == false) {
+        wrongSound.play()}
     }
     // Set status class for all buttons
     Array.from(answerButtonsElement.children).forEach(button => {
