@@ -5,6 +5,8 @@ const welcomeText = document.getElementById('welcome-txt')
 const questionContainerElement = document.getElementById('game-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+let correctSound = new Audio('assets/audio/correct-answer.mp3')
+let wrongSound = new Audio('assets/audio/wrong-answer.mp3')
 
 // Scoreboard variable
 const numberAnswered = document.getElementById('total-answered')
@@ -86,10 +88,8 @@ function selectAnswer(e) {
     if (correct) {
         score++
         scoreBoard.innerHTML = score
-        let correctSound = new Audio('assets/audio/correct-answer.mp3')
         correctSound.play()
     } else {
-        let wrongSound = new Audio('assets/audio/wrong-answer.mp3')
         wrongSound.play()
     }
     // Set status class for all buttons
