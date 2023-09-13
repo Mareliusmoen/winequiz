@@ -35,21 +35,21 @@ function unMuteColor(color) {
 var muteFlag = true
 function toggleMuteBoolean() {
     console.log(muteFlag)
-    muteFlag = muteFlag ? false : true
+    muteFlag = !muteFlag
     console.log(muteFlag)
 }
 //Mute / Unmute button color change
 function muteSound() {
     unMuteColor('#D9DDDC')
     muteColor('#ff9b9b50')
-    if (muteFlag = false) {
+    if (muteFlag === false) {
         toggleMuteBoolean()
     }
 }
 function unMuteSound() {
     muteColor('#D9DDDC')
     unMuteColor('#81996750')
-    if (muteFlag = true) {
+    if (muteFlag === true) {
         toggleMuteBoolean()
     }
 }
