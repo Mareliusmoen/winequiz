@@ -507,4 +507,13 @@ const questions = [
             { text: '72 months on the lees', correct: false },
         ]
     },
+    {
+        question: 'What is the minimum aging requirement for Barolo before released on the marked?',
+        answers: [
+            { text: '18 months in total, minimum 6 of them in barrel', correct: false },
+            { text: '24 months in total, minimum 12 of them in barrel', correct: false },
+            { text: '36 months in total, minimum 18 of them in barrel', correct: true },
+            { text: '48 months in total, minimum 24 of them in barrel', correct: false },
+        ]
+    },
 ];
