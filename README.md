@@ -73,10 +73,12 @@ The app has:
 - Through the devtools device toolbar I have confirmed the responsiveness of the app for screensizes from small mobile screens all the way to 4K displays.
 - Confirmed that the mute and unmute buttons function properly, and functions properly on different devices (Samsung S20, Iphone 14 Max, Macbook Pro, Windows 10 laptop).
 - I confirmed that the logo link resets and restart the game, and brings the user back to the welcome message and resets score.
+- When the JavaScript code was put through JSHINT validator the first time it showed 90- something missing semicolons, so I added them where they were missing.
 
 ## Validator testing
 - HTML, no errors or warnings when run through the official W3C validator.
 - CSS, no errors or warnings when run through the official W3C validator (jigsaw).
+- JavaScript, 0 errors in JSHINT validator.
 - Lighthouse scores: ![screen shot of Lighthouse scores](assets/images/lighthouse-score.png)
 
 ## Bugs
