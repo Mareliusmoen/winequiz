@@ -69,11 +69,12 @@ The app has:
 ## Validator testing
 - HTML, no errors or warnings when run through the official W3C validator.
 - CSS, no errors or warnings when run through the official W3C validator (jigsaw).
-- 
+- ![screen shot of Lighthouse scores](assets/images/lighthouse-score.png)
 
 ## Bugs
 - Mute/ unmute buttons did not function as intended, would unmute when pressed but not go back mute when pressed again. The fix was to change the '=' sign in the function to a absolute equality '==='.
 - Problems with the score not increasing everytime you press the correct button (you can press it ten times for 10 points before moving on to the next question). The fix was to deactivate the answerbuttons after any of them were pressed once.
+- Got a accessibility score of 78 in Lighthouse because of the lack of aria-label for mute/unmute button and social media links, so added label for all and got a score of 100.
 
 ## Unsolved bugs
 ????
