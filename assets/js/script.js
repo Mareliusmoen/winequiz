@@ -381,4 +381,130 @@ const questions = [
             { text: 'A wine producer in Lebanon ', correct: false },
         ]
     },
+    {
+        question: 'Which was the first federally approved American Viticultural Area (AVA)? It was approved on June 20th 1980. ',
+        answers: [
+            { text: 'Augusta AVA, Missouri', correct: true },
+            { text: 'Willamette Valllay AVA, Oregon', correct: false },
+            { text: 'Lodi AVA, California', correct: false },
+            { text: 'Mendocino AVA, California', correct: false },
+        ]
+    },
+    {
+        question: 'Upper Mississippi River Valley AVA is the largest Amercan Viticultural Area, how big is it?',
+        answers: [
+            { text: 'Approx. 77 000 hectar', correct: false },
+            { text: 'Approx. 770 000 hectar', correct: false },
+            { text: 'Approx. 7 700 000 hectar', correct: true },
+            { text: 'Approx. 77 000 000 hectar', correct: false },
+        ]
+    },
+    {
+        question: 'What is the minimum aging requirement for Vintage Champagne before released on the marked? ',
+        answers: [
+            { text: '48 months on the lees', correct: false },
+            { text: '36 months on the lees', correct: true },
+            { text: '24 months on the lees', correct: false },
+            { text: '12 months on the lees', correct: false },
+        ]
+    },
+    {
+        question: 'What is the minimum aging requirement for Non Vintage (NV) Champagne before released on the marked?',
+        answers: [
+            { text: '9 months on the lees', correct: false },
+            { text: '12 months on the lees', correct: false },
+            { text: '15 months on the lees', correct: true },
+            { text: '18 months on the lees', correct: false },
+        ]
+    },
+    {
+        question: 'How many wineregions are there in Italy?',
+        answers: [
+            { text: '20', correct: true },
+            { text: '19', correct: false },
+            { text: '18', correct: false },
+            { text: '17', correct: false },
+        ]
+    },
+    {
+        question: 'How many wine regions are there in Germany?',
+        answers: [
+            { text: '10', correct: false },
+            { text: '11', correct: false },
+            { text: '12', correct: false },
+            { text: '13', correct: true },
+        ]
+    },
+    {
+        question: 'How sweet are the sweetes Tokaji dessertwines?',
+        answers: [
+            { text: 'Aprox. 400 grams of sugar per liter', correct: false },
+            { text: 'Aprox. 600 grams of sugar per liter', correct: false },
+            { text: 'Aprox. 800 grams of sugar per liter', correct: true },
+            { text: 'Aprox. 1000 grams of sugar per liter', correct: false },
+        ]
+    },
+    {
+        question: 'What is the local name for the Chardonnay variety in Steiermark, Austria?',
+        answers: [
+            { text: 'Weissburgunder', correct: false },
+            { text: 'Kerner', correct: false },
+            { text: 'Burgunderriesling', correct: false },
+            { text: 'Morillon', correct: true },
+        ]
+    },
+    {
+        question: 'Which german region is famous for its round-shaped bottle called "Bocksbeutel"?',
+        answers: [
+            { text: 'Franken', correct: true },
+            { text: 'Mosel', correct: false },
+            { text: 'Rheingau', correct: false },
+            { text: 'Württemberg', correct: false },
+        ]
+    },
+    {
+        question: 'What is the name of the bug that killed most of Europes vineyards betsween 1860-1910?',
+        answers: [
+            { text: 'Diptera', correct: false },
+            { text: 'Caelifera', correct: false },
+            { text: 'Culicidae', correct: false },
+            { text: 'Phylloxera', correct: true },
+        ]
+    },
+    {
+        question: 'What is the minimum aging requirement for Cava before released on the marked?',
+        answers: [
+            { text: '3 months on the lees', correct: false },
+            { text: '6 months on the lees', correct: false },
+            { text: '9 months on the lees', correct: true },
+            { text: '12 months on the lees', correct: false },
+        ]
+    },
+    {
+        question: 'What is the minimum aging requirement for Cava Reserva before released on the marked?',
+        answers: [
+            { text: '12 months on the lees', correct: false },
+            { text: '15 months on the lees', correct: true },
+            { text: '18 months on the lees', correct: false },
+            { text: '24 months on the lees', correct: false },
+        ]
+    },
+    {
+        question: 'What is the minimum aging requirement for Cava Gran Reserva before released on the marked?',
+        answers: [
+            { text: '18 months on the lees', correct: false },
+            { text: '24 months on the lees', correct: false },
+            { text: '30 months on the lees', correct: true },
+            { text: '36 months on the lees', correct: false },
+        ]
+    },
+    {
+        question: 'What is the minimum aging requirement for Cava de Paraje Calificado before released on the marked?',
+        answers: [
+            { text: '36 months on the lees', correct: true },
+            { text: '48 months on the lees', correct: false },
+            { text: '60 months on the lees', correct: false },
+            { text: '72 months on the lees', correct: false },
+        ]
+    },
 ];
