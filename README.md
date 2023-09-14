@@ -1,26 +1,27 @@
 # WineQuiz
 
-This a JavaScript winequiz designed to be just as fun by your self as it will be in a group, the quistions will be suited for professionals and beginners alike. The app is designed to help hospitality workers expand their wine knowledge in an easy and interactive way, all questions are controlled by a award-winning Sommelier and based on best wine literature available.
+This JavaScript winequiz designed to be just as fun by your self as it will be in a group, and is made with hospitality professionals in mind. The questions will be suited for professionals and beginners alike. The app is designed to help hospitality workers and wine enthusiasts expand their wine knowledge in an easy and interactive way, all questions are controlled by a award-winning Sommelier and based on the best wine literature available.
 
 ## Demo
 ![Shows the page on laptop, desktop, tablet and mobile screen](assets/images/winequiz-responsive.png)
 Link to the live site: https://mareliusmoen.github.io/winequiz/
 ## User Stories
-This app is created for those that have a basic knowledge about wine, wine regions, production technique and would like to learn more while testing their skills.
+This app is created for those industry professionals or wine enthusiasts that have a basic/intermidiate knowledge about wine, wine regions, production technique and would like to learn more while testing their skills.
 As a user of this quiz I would like to:
 - As a user, I want to quickly understand what the quiz is all about and how to start to quiz itself.
 - As a user, I want to be able to play the quiz on laptop/desktop (mouse), tablet (touchscreen) and mobile (touchscreen).
 - As a user, I would like to know my score as I play the game.
-- As a user, I would like to get the correct answered explained when I answer incorrectly to learn more about the subject.
+- As a user, I would like to get the correct shown when I answer incorrectly to learn more about the subject.
 - As a user, I would like to have a way to share the Quiz the quiz URL with friends & family through social media(Facebook and Linkedin).
 - As a user I can keep on playing and learning without the quiz ending.
+- As a user it should be quick to start a new game so it's always practical to just do a few quistions whenever I have some spare time.
 
 ## Strategy
-The strategy is to educate people about wine knowledge, bring more enthusiasm to the subject of wine and do it in a fun and creative way. This will also be a great training tool for employees in the hospitality industry as well as those doing their Sommelier certifications.
+The strategy is to educate people about wine, bring more enthusiasm to the subject of wine and do it in a fun and creative way. This will also be a great training tool for employees in the hospitality industry as well as those doing their Sommelier certifications.
 
 ## Wireframe
 The wireframe for this project was hand written as I enjoy the artist freedom and creativity the process gives me, then those handwritten designs were digitalised with the AI-powered Uizasrd App ( app.uizard.io ).
-Because of feedback from test users and extensive testing by myselv, I have excluded the extra correct/wrong answer pages, to enhance the swiftness of the app and to boost the productivity of the learning experience of the user I have incorporated this in coloring the different option after the user have selected their answer. In addition to the color change I've added sound effects. The timer/countdown was removed to allow for the app be more educational rather than a test to assert your current knowledge, so now the user can read the question and all the answer at their own pace and contemplate about the facts presented by each individual question.
+Because of feedback from test users and extensive testing by myself, I have excluded the extra correct/wrong answer pages, to enhance the swiftness of the app and to boost the productivity of the learning experience of the user, I have instead incorporated this in coloring the different option after the user have selected their answer (green for correct and red for wrong). In addition to the color change I've added sound effects(bottle pop sounf for correct and bottle breaking for wrong). The timer/countdown was removed to allow for the app be more educational rather than a test to assert your current knowledge, so now the user can read the question and all the answer at their own pace and contemplate about the facts presented by each individual question.
 
 ### Welcome screen
 ![wireframe of the welcome screen](assets/images/winequiz-welcome.png)
@@ -50,17 +51,30 @@ The features of the page where slightly changes from the original wireframe beca
 The app has:
 - A welcome text that is descriptive, fun/easy-going and entices the user to click the start-button.
 - It has a start-button that hides the welcometext and brings out the first question with 2-4 answer options.
+- Mute and Unmute buttons that show a color when active (red for mute, green for unmute), the default for the page is mute.
 - When an answer is selected by touch or click the selected answer gets a extra thick border and the correct answer turns green and all the incorrect answers turns red. If you chose correctly the score-counter increases by 1, and as soon as you have selected your option a next question button will appear. (If there are no more questions available in the index a endgame/ restart button will show up)
+- In addition to the thicker border and colorchange, if unmuted, the user will hear a sound confirming of the answer was correct(bottle popping sound) or wrong (bottle shattering sound).
+- The WineQuiz logo is also a reset link that brings you back to the welcomepage and resets your score.
+
 ## Features left to implement
-????
+- Share-links for Facebook and LinkedIn are not functioning.
 
 ## Testing
-????
+- I've tested the app and it works as intended in these browsers: Microsoft Edge, Firefox, Chrome and Safari.
+- Its tested on a Samsung S20 in chrome browser, and a Iphone 14 MAX in safari browser.
+- Through the devtools device toolbar I have confirmed the responsiveness of the app for screensizes from small mobile screens all the way to 4K displays.
+- Confirmed that the mute and unmute buttons function properly, and functions properly on different devices (Samsung S20, Iphone 14 Max, Macbook Pro, Windows 10 laptop).
+- I confirmed that the logo link resets and restart the game, and brings the user back to the welcome message and resets score.
+
 ## Validator testing
-?????
+- HTML, no errors or warnings when run through the official W3C validator.
+- CSS, no errors or warnings when run through the official W3C validator (jigsaw).
+- 
 
 ## Bugs
-????
+- Mute/ unmute buttons did not function as intended, would unmute when pressed but not go back mute when pressed again. The fix was to change the '=' sign in the function to a absolute equality '==='.
+- Problems with the score not increasing everytime you press the correct button (you can press it ten times for 10 points before moving on to the next question). The fix was to deactivate the answerbuttons after any of them were pressed once.
+
 ## Unsolved bugs
 ????
 
