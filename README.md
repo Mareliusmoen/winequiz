@@ -87,7 +87,7 @@ The app has:
 - Got a accessibility score of 78 in Lighthouse because of the lack of aria-label for mute/unmute button and social media links, so added label for all and got a score of 100.
 
 ## Unsolved bugs
-????
+- It seems like the URL provided by META/Facebook for sharing this app on their platform did not work as intended, that is a bug/feature I've left to implement/sort out.
 
 ## Deployment
 This site was deployed to GitHub Pages and this is the method I used: From the GitHub repository go to the settings, in the source-section dropdown menu select master branch. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
