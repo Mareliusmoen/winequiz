@@ -52,9 +52,17 @@ The app has:
 - A welcome text that is descriptive, fun/easy-going and entices the user to click the start-button.
 - It has a start-button that hides the welcometext and brings out the first question with 2-4 answer options.
 - Mute and Unmute buttons that show a color when active (red for mute, green for unmute), the default for the page is mute.
-- When an answer is selected by touch or click the selected answer gets a extra thick border and the correct answer turns green and all the incorrect answers turns red. If you chose correctly the score-counter increases by 1, and as soon as you have selected your option a next question button will appear. (If there are no more questions available in the index a endgame/ restart button will show up)
+- When an answer is selected by touch or click the selected answer gets a extra thick border and the correct answer turns green and all the incorrect answers turns red. If you chose correctly the score-counter increases by 1, and as soon as you have selected your option a next question button will appear. (If there are no more questions available in the index a endgame/ restart button will show up).
 - In addition to the thicker border and colorchange, if unmuted, the user will hear a sound confirming of the answer was correct(bottle popping sound) or wrong (bottle shattering sound).
 - The WineQuiz logo is also a reset link that brings you back to the welcomepage and resets your score.
+
+### Screenshots
+- Welcome page
+![Screenshot of welcome page](assets/images/welcome-page.png)
+- Quiz page before answer is chosen
+![Quiz page before answer is chosen](assets/images/quiz-page.png)
+- Quiz page after answer is chosen
+![Quiz page after answer is chosen](assets/images/answered-page.png)
 
 ## Features left to implement
 - Share-links for Facebook and LinkedIn are not functioning.
@@ -69,7 +77,7 @@ The app has:
 ## Validator testing
 - HTML, no errors or warnings when run through the official W3C validator.
 - CSS, no errors or warnings when run through the official W3C validator (jigsaw).
-- ![screen shot of Lighthouse scores](assets/images/lighthouse-score.png)
+- Lighthouse scores: ![screen shot of Lighthouse scores](assets/images/lighthouse-score.png)
 
 ## Bugs
 - Mute/ unmute buttons did not function as intended, would unmute when pressed but not go back mute when pressed again. The fix was to change the '=' sign in the function to a absolute equality '==='.
