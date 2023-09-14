@@ -1,112 +1,110 @@
 //Connecting the HTML element to a variable
-const startButton = document.getElementById('start-button')
-const nextButton = document.getElementById('next-button')
-const welcomeText = document.getElementById('welcome-txt')
-const questionContainerElement = document.getElementById('game-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
-let correctSound = new Audio('assets/audio/correct-answer.mp3')
-let wrongSound = new Audio('assets/audio/wrong-answer.mp3')
-const muteButton = document.getElementById('mute-button')
-const unMuteButton = document.getElementById('unmute-button')
+const startButton = document.getElementById('start-button');
+const nextButton = document.getElementById('next-button');
+const welcomeText = document.getElementById('welcome-txt');
+const questionContainerElement = document.getElementById('game-container');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
+let correctSound = new Audio('assets/audio/correct-answer.mp3');
+let wrongSound = new Audio('assets/audio/wrong-answer.mp3');
+const muteButton = document.getElementById('mute-button');
+const unMuteButton = document.getElementById('unmute-button');
 
 // Scoreboard variable
-const numberAnswered = document.getElementById('total-answered')
-const scoreBoard = document.getElementById('score')
-let totalAnswered = 0
-let score = 0
-scoreBoard.innerHTML = score
-numberAnswered.innerHTML = totalAnswered
+const numberAnswered = document.getElementById('total-answered');
+const scoreBoard = document.getElementById('score');
+let totalAnswered = 0;
+let score = 0;
+scoreBoard.innerHTML = score;
+numberAnswered.innerHTML = totalAnswered;
 
 //variable to check if question is answered
-let questionAnswered = false
+let questionAnswered = false;
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 
 //When you press the 'Mute' or 'Unmute' button
-muteButton.addEventListener('click', muteSound)
+muteButton.addEventListener('click', muteSound);
 function muteColor(color) {
     muteButton.style.background = color;
 }
-unMuteButton.addEventListener('click', unMuteSound)
+unMuteButton.addEventListener('click', unMuteSound);
 function unMuteColor(color) {
     unMuteButton.style.background = color;
 }
-var muteFlag = true
+var muteFlag = true;
 function toggleMuteBoolean() {
-    console.log(muteFlag)
-    muteFlag = !muteFlag
-    console.log(muteFlag)
+    console.log(muteFlag);
+    muteFlag = !muteFlag;
+    console.log(muteFlag);
 }
 //Mute / Unmute button color change
 function muteSound() {
-    unMuteColor('#D9DDDC')
-    muteColor('#ff9b9b50')
+    unMuteColor('#D9DDDC');
+    muteColor('#ff9b9b50');
     if (muteFlag === false) {
-        toggleMuteBoolean()
+        toggleMuteBoolean();
     }
 }
 function unMuteSound() {
-    muteColor('#D9DDDC')
-    unMuteColor('#81996750')
+    muteColor('#D9DDDC');
+    unMuteColor('#81996750');
     if (muteFlag === true) {
-        toggleMuteBoolean()
+        toggleMuteBoolean();
     }
 }
 
 //When you press the "Start" or "Next" buttons
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++
-    setNextQuestion()
-})
+    currentQuestionIndex++;
+    setNextQuestion();
+});
 //Function to hide the welcome page and start the quiz itself
 function startGame() {
-    console.log('started')
-    score = 0
-    scoreBoard.innerHTML = score
-    startButton.classList.add('hide')
-    welcomeText.classList.add('hide')
+    console.log('started');
+    score = 0;
+    scoreBoard.innerHTML = score;
+    startButton.classList.add('hide');
+    welcomeText.classList.add('hide');
     /* Randomization of all questions,
    explained and credited from: https://forum.freecodecamp.org/t/how-does-math-random-work-to-sort-an-array/151540 */
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questionContainerElement.classList.remove('hide')
-    setNextQuestion()
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    questionContainerElement.classList.remove('hide');
+    setNextQuestion();
 }
 
 //Function to call the right function to reset all elements and show the next question & options
 function setNextQuestion() {
-    resetState()
+    resetState();
     //Picking a question out of the randomized array
     const currentQuestion = shuffledQuestions[currentQuestionIndex];
-    showQuestion(currentQuestion)
+    showQuestion(currentQuestion);
 }
 
 /*Bringing a question from the array and setting its text and creating the option buttons
 with the right text-content and the "correct" dataset to let you know if the answer is correct*/
 function showQuestion(question) {
-    questionElement.innerText = question.question
-    /*This function below is credited both to https://www.youtube.com/watch?v=riDzcEQbX6k
-    & https://stackoverflow.com/questions/72873577/creating-a-javascript-quiz-web-app-why-wont-the-answer-options-show-under-each */
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer)
-        answerButtonsElement.appendChild(button)
-    })
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 //Removing all option buttons and hiding the next button for the next round of the quiz
 function resetState() {
-    nextButton.classList.add('hide')
+    nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
-    questionAnswered = false
+    questionAnswered = false;
 }
 //Selecting a button by clicking it, checking if its the correct answer
 function selectAnswer(e) {
@@ -114,50 +112,50 @@ function selectAnswer(e) {
     if (questionAnswered) {
         return;
     }
-    const selectedButton = e.target
-    selectedButton.classList.add('selected')
-    const correct = selectedButton.dataset.correct
+    const selectedButton = e.target;
+    selectedButton.classList.add('selected');
+    const correct = selectedButton.dataset.correct;
     // Check if the answer is correct and update the score
     if (correct) {
-        score++
-        scoreBoard.innerHTML = score
+        score++;
+        scoreBoard.innerHTML = score;
         if (muteFlag == false){
-        correctSound.play()}
+        correctSound.play();}
     } else {
         if (muteFlag == false) {
-        wrongSound.play()}
+        wrongSound.play();}
     }
     // Set status class for all buttons
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+        setStatusClass(button, button.dataset.correct);
+    });
     //if an answer is selected
-    questionAnswered = true
+    questionAnswered = true;
     if (questionAnswered) {
-        totalAnswered++
-        numberAnswered.innerHTML = totalAnswered
+        totalAnswered++;
+        numberAnswered.innerHTML = totalAnswered;
     }
     /*When a option is chosen it checks if there are questions left to show in the array
     if not it will show a restart button that resets the game*/
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide')
+        nextButton.classList.remove('hide');
     } else {
-        startButton.innerText = 'Go Again!'
-        startButton.classList.remove('hide')
+        startButton.innerText = 'Go Again!';
+        startButton.classList.remove('hide');
     }
 }
 //setting the statusclass for all answers to the pre-determined class (wrong/correct)
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
-        element.classList.add('correct')
+        element.classList.add('correct');
     } else {
-        element.classList.add('wrong')
+        element.classList.add('wrong');
     }
 }
 function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
 const questions = [
@@ -383,4 +381,4 @@ const questions = [
             { text: 'A wine producer in Lebanon ', correct: false },
         ]
     },
-]
+];
